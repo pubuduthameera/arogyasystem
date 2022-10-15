@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #f7f3f2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospital_managment_system.HelloController">
+   <children>
+      <HBox layoutX="223.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1033.7" style="-fx-background-color: #ffffff;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="lblTitle" fx:id="lblTitle" text="Dashboard">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children></HBox>
+      <VBox layoutX="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="225.0" style="-fx-background-color: #00c1c1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="225.0" style="-fx-background-color: #00c1c1;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </VBox>
+            <Button id="dashbtn" fx:id="dashbtn" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="20.0" layoutY="176.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlclicks" prefHeight="40.0" prefWidth="231.0" styleClass="btn" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css" text="Dashboard">
+               <graphic>
+                  <FontAwesomeIcon glyphName="DASHBOARD" size="2em" tabSize="5" />
+               </graphic>
+               <font>
+                  <Font name="Rockwell" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="docbtn" fx:id="docbtn" alignment="BASELINE_LEFT" graphicTextGap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlclicks" prefHeight="40.0" prefWidth="231.0" styleClass="btn" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css" text="Doctors">
+               <graphic>
+                  <FontAwesomeIcon glyphName="USER_MD" size="2em" tabSize="5" />
+               </graphic>
+               <font>
+                  <Font name="Rockwell" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+            <Button id="appointbtn" fx:id="appointbtn" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="20.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlclicks" prefHeight="40.0" prefWidth="231.0" styleClass="btn" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css" text="Appointment">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CALENDAR" size="2em" tabSize="5" />
+               </graphic>
+               <font>
+                  <Font name="Rockwell" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="repobtn" fx:id="repobtn" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="20.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlclicks" prefHeight="40.0" prefWidth="231.0" styleClass="btn" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css" text="Repots">
+               <graphic>
+                  <FontAwesomeIcon glyphName="FILE_TEXT" size="2em" tabSize="5" />
+               </graphic>
+               <font>
+                  <Font name="Rockwell" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="billbtn" fx:id="billbtn" alignment="BASELINE_LEFT" graphicTextGap="50.0" layoutX="20.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlclicks" prefHeight="40.0" prefWidth="225.0" styleClass="btn" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css" text="Billing">
+               <graphic>
+                  <FontAwesomeIcon glyphName="FILE" size="2em" tabSize="5" />
+               </graphic>
+               <font>
+                  <Font name="Rockwell" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="280.0" layoutY="79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 10;" styleClass="backgroundColor" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Doctors">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text id="lblNoDoc" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="03">
+               <HBox.margin>
+                  <Insets left="-110.0" top="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Rockwell Bold" size="24.0" />
+               </font>
+            </Text>
+            <FontAwesomeIcon fill="#fff1f19c" glyphName="USER_MD" size="5em">
+               <HBox.margin>
+                  <Insets left="120.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="617.0" layoutY="79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 10;" styleClass="backgroundColor1" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Today Patients">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text id="lblNoPat" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="03">
+               <HBox.margin>
+                  <Insets left="-130.0" top="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Rockwell Bold" size="24.0" />
+               </font>
+            </Text>
+            <FontAwesomeIcon fill="#fff1f19c" glyphName="GROUP" size="5em">
+               <HBox.margin>
+                  <Insets left="120.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="955.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 10;" styleClass="backgroundColor2" stylesheets="@../../../../java/com/example/hospital_managment_system/style.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital Earning">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text id="lblNoEarn" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs.54214">
+               <HBox.margin>
+                  <Insets left="-150.0" top="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Rockwell Bold" size="24.0" />
+               </font>
+            </Text>
+            <FontAwesomeIcon fill="#fff1f19c" glyphName="LINE_CHART" size="5em">
+               <HBox.margin>
+                  <Insets left="40.0" top="15.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <TableView id="table" fx:id="table" layoutX="358.0" layoutY="365.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="659.0">
+        <columns>
+          <TableColumn fx:id="nametb" prefWidth="241.59997862577438" text="Name" />
+          <TableColumn fx:id="addresstb" minWidth="0.0" prefWidth="239.99998474121094" text="Address" />
+            <TableColumn fx:id="disetb" minWidth="0.0" prefWidth="96.0" text="Diseases" />
+            <TableColumn fx:id="statb" prefWidth="82.39996337890625" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

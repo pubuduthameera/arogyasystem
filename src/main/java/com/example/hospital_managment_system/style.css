@@ -1,0 +1,18 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to left, #5ed577, #00ff29);
+}
+.backgroundColor1{
+    -fx-background-color: linear-gradient(to left, #5395f8, #3140b7);
+}
+.backgroundColor2{
+    -fx-background-color: linear-gradient(to left, #dadada, #8c8c8c);
+}
+.btn{
+    -fx-background-color: transparent;
+}
+.btn:hover{
+    -fx-background-color: #0600ff;
+}
+.btn:pressed{
+    -fx-background-color: #938eff;
+}
